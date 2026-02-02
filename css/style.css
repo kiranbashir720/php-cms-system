@@ -1,0 +1,698 @@
+/* ===================== */
+/* COMMON CSS */
+body{
+    background: #f9fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.btn:focus,
+button:focus{
+    outline: none;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+h2.page-heading{
+  margin: 5px 0 30px;
+  padding: 0 5px 10px;
+  border-bottom: 2px solid #4a5568;
+  color: #2d3748;
+}
+
+/* ===================== */
+
+/* ===================== */
+/* ADMIN Panel CSS START */
+/* ===================== */
+
+#wrapper-admin{
+    padding: 100px 0 0;
+    background: #edf2f7;
+}
+
+img.logo{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#header-admin{
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#header-admin .admin-logout{
+    margin: 10px 0;
+    color: #e2e8f0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#header-admin .admin-logout:hover{
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+#admin-menubar{
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+#admin-menubar .admin-menu{
+    font-size: 0;
+}
+#admin-menubar .admin-menu li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+#admin-menubar .admin-menu li a{
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+#admin-menubar .admin-menu li a:hover{
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+#admin-content{
+    padding: 25px 0;
+    min-height: 750px;
+}
+
+#admin-content .admin-heading{
+    font-size: 32px;
+    margin: 0 0 20px;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+#admin-content .add-new{
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.3s;
+    border: none;
+}
+#admin-content .add-new:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+#admin-content .content-table{
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    margin: 0 0 25px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#admin-content .content-table thead{
+    color: #fff;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+}
+
+#admin-content .content-table th{
+    padding: 12px;
+    border: 1px solid #4a5568;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#admin-content .content-table tbody{
+    color: #4a5568;
+}
+
+#admin-content .content-table tbody tr{
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+#admin-content .content-table tbody tr:nth-child(even){
+    background-color: #f8fafc;
+}
+#admin-content .content-table tbody tr:hover{
+    background-color: #edf2f7;
+}
+
+#admin-content .content-table tbody td{
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+#admin-content .content-table tbody td:nth-child(2){
+    text-align: left;
+}
+
+#admin-content .admin-pagination{
+    margin: 0;
+}
+#admin-content .admin-pagination li a{
+    display: block;
+}
+
+.id,
+.edit,
+.delete{
+    text-align:center;
+}
+
+form{
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+/* ===================== */
+/* ADMIN Panel CSS END */
+/* ===================== */
+
+/* ===================== */
+/* FrontEnd CSS START */
+/* ===================== */
+
+/* Header Styling */
+#header{
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#logo{
+    display: inline-block;
+    width: 60%;
+    max-width: 300px;
+}
+
+#logo img{
+    width: 100%;
+    filter: brightness(1.1);
+}
+
+/* Menubar Styling */
+#menu-bar{
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#menu-bar .menu > li{
+    display: inline-block;
+}
+
+.menu > li > a{
+    padding: 12px 24px;
+    display: block;
+    text-transform: uppercase;
+    color: #4a5568;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition:all 0.3s ease;
+    position: relative;
+}
+
+.menu > li > a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+#menu-bar .menu > li > a:hover,
+#menu-bar .menu > li > a.active{
+    color:#667eea;
+    background: transparent;
+}
+
+#menu-bar .menu > li > a:hover:after,
+#menu-bar .menu > li > a.active:after {
+    width: 80%;
+}
+
+/* Main Content Styling */
+#main-content{
+    padding: 40px 0;
+    min-height: 750px;
+    background: #f9fafc;
+}
+
+#main-content .post-container{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#main-content .post-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#main-content .post-content{
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0 0 30px;
+    margin-bottom:30px;
+}
+
+#main-content .post-content img{
+  width: 100%;
+  border-radius: 4px;
+}
+
+#main-content .post-content .post-img{
+  border: 3px solid #edf2f7;
+  display: block;
+  height: 145px;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+#main-content .post-content .post-img:hover{
+  border: 3px solid #667eea;
+  transform: scale(1.02);
+}
+#main-content .post-content .inner-content{
+    border: 1px solid #000;
+}
+
+#main-content .post-content h3{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: #2d3748;
+}
+#main-content .post-content h3 a{
+    color: #4a5568;
+    transition:all 0.3s ease;
+}
+#main-content .post-content h3 a:hover{
+    color:#667eea;
+}
+
+#main-content .post-content .post-information span{
+    color: #718096;
+    font-size: 13px;
+    text-transform: capitalize;
+    margin: 0 10px 5px 0;
+    display: inline-block;
+    padding: 3px 10px;
+    background: #f7fafc;
+    border-radius: 12px;
+}
+
+#main-content .post-content .post-information i{
+    color: #764ba2;
+    margin-right: 5px;
+}
+
+#main-content .post-content .post-information a{
+    color: #718096;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#main-content .post-content .post-information a:hover{
+    color: #667eea;
+    text-decoration: none;
+}
+
+#main-content .post-content p,
+#main-content .single-post p{
+    color: #4a5568;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    margin:0 0 15px;
+}
+
+#main-content .post-content a.read-more{
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-size: 13px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#main-content .post-content a.read-more:hover{
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+#main-content .single-post{
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#main-content .single-post h3{
+    color: #2d3748;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#main-content .single-post .post-information{
+    margin: 0 0 20px;
+}
+#main-content .single-post p{
+    text-align: justify;
+    line-height: 1.8;
+}
+
+#main-content .single-post img.single-feature-image{
+    width: 70%;
+    margin: 0 auto 25px;
+    display: block;
+    border: 3px solid #edf2f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Pagination Styling */
+.pagination {
+    display: block;
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+.pagination li {
+    display:inline-block;
+    margin: 0 5px 0 0;
+}
+
+.pagination li a{
+    border: none;
+    background: #edf2f7;
+    color: #4a5568;
+    padding: 10px 18px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.pagination li a:hover,
+.pagination > li > a:focus,
+.pagination li.active a{
+    color:#fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.page_links {
+    background-color: #edf2f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    border: 1px solid #e2e8f0;
+    padding: 8px 16px;
+    margin: 3px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#page_a_link{
+    font-size: 13px;
+    border: 1px solid #e2e8f0;
+    color:#4a5568;
+    background-color: #edf2f7;
+    padding: 8px 16px;
+    margin: 3px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#page_a_link:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-color: transparent;
+}
+
+i.fa{
+    color:#4a5568;
+}
+
+/* Sidebar Styling */
+#sidebar h4{
+    color: #2d3748;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 0 0 12px;
+    margin: 0 0 25px;
+    border-left: 4px solid #667eea;
+    letter-spacing: 0.5px;
+}
+
+#sidebar .search-box-container{
+    background-color: #fff;
+    padding: 25px;
+    margin: 0 0 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+#sidebar .search-post{
+    padding: 0;
+}
+#sidebar .search-post input{
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+#sidebar .search-post input:focus{
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+}
+
+#sidebar .search-post .btn{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#sidebar .search-post .btn:hover,
+#sidebar .search-post .btn:focus{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.3);
+}
+
+#sidebar .search-post i.fa{
+    font-size: 16px;
+    color: #a0aec0;
+    line-height: 40px;
+    float:right;
+}
+
+#sidebar .recent-post-container{
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+#sidebar .recent-post{
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    transition: all 0.3s ease;
+}
+
+#sidebar .recent-post:hover {
+    transform: translateX(5px);
+}
+
+#sidebar .recent-post:last-child{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#sidebar .recent-post .post-img{
+  display: inline-block;
+  width: 33%;
+  border: 3px solid #edf2f7;
+  vertical-align: top;
+  transition: all .3s ease;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#sidebar .recent-post .post-img:hover{
+  border: 3px solid #667eea;
+  transform: scale(1.05);
+}
+
+#sidebar .recent-post .post-img img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+#sidebar .recent-post .post-content{
+    width: 65%;
+    display: inline-block;
+    border: none;
+    padding: 0 0 0 15px;
+    margin: 0;
+}
+
+#sidebar .recent-post h5{
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    color: #2d3748;
+}
+#sidebar .recent-post h5 a{
+    color: #4a5568;
+    transition: color 0.3s;
+}
+
+#sidebar .recent-post h5 a:hover {
+    color: #667eea;
+}
+
+#sidebar .recent-post span{
+    color: #718096;
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    background: #f7fafc;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+#sidebar .recent-post span a{
+    color: #718096;
+    transition: color 0.3s;
+}
+
+#sidebar .recent-post span a:hover {
+    color: #667eea;
+}
+
+#sidebar .recent-post span i{
+    color: #764ba2;
+}
+
+#sidebar .recent-post a.read-more{
+    color: #667eea;
+    background-color: rgba(102, 126, 234, 0.1);
+    width: 75px;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+#sidebar .recent-post a.read-more:hover{
+    color: #fff;
+    background-color: #667eea;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+/* Footer Styling */
+#footer{
+    color: #e2e8f0;
+    padding: 25px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+#footer  a{
+    color:#e2e8f0;
+    transition: color 0.3s ease;
+}
+
+#footer  a:hover{
+    color:#fff;
+    text-decoration: underline;
+}
+
+#footer  span  a:hover{
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #main-content .post-content .post-img {
+        height: 200px;
+    }
+    
+    #sidebar .recent-post .post-img {
+        width: 40%;
+    }
+    
+    #sidebar .recent-post .post-content {
+        width: 58%;
+    }
+    
+    .menu > li > a {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+}
